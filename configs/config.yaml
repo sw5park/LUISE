@@ -11,7 +11,7 @@ openai:
   api_key: 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
 
 project:
-  objective: Predict the cryptocurrency market movement by looking at how the price of Bitcoin and Ethereum behaves based on the news headlines.
+  objective: Apply decision theory to the problem of making decisions in multiple agent systems that is self governing and self organizing.
   first_task: Develop a task list
 
 agents:
