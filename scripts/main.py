@@ -47,6 +47,7 @@ task_id_counter = 1
 
 def run_single_iteration():
     global task_id_counter
+    print("Running single iteration")  # Add this line
     if task_manager.has_tasks():
         print("\033[95m\033[1m" + "\n*****TASK LIST*****\n" + "\033[0m\033[0m")
         print(task_manager)
@@ -84,6 +85,8 @@ def run_single_iteration():
         return result
     else:
         return "No tasks available"
+
+
 
 def main():
     return run_single_iteration()
