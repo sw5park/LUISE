@@ -1,4 +1,5 @@
 pinecone:
+
   api_key: API_KEY
   environment: eu-west1-gcp
   pinecone_index:
@@ -10,8 +11,9 @@ pinecone:
 openai:
   api_key: API_KEY
 
+
 project:
-  objective: Solve world hunger
+  objective: Apply decision theory to the problem of making decisions in multiple agent systems that is self governing and self organizing.
   first_task: Develop a task list
 
 agents:

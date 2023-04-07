@@ -1,4 +1,4 @@
-# Otto: Autonomous Collective Decision Making (ACDM)
+# Otto: Autonomous Collective Decision Maker (ACDM)
 
 Otto wraps a large language model and a vector database, serving as the initial stage of a digital organization designed to be self-governing, autonomous, and capable of changing scale. The primary goal is to enable agents to collaboratively manage resources, make decisions, and govern themselves. Design decisions encompass autonomous processes that ensure all agents have an equal say in the direction and management of the organization.
 
@@ -19,19 +19,25 @@ The project comprises the following components:
 * .github: Stores the GitHub-related configurations and workflows
 * LICENSE: Contains the project's license information.
 
-## Agent Interaction Diagram
+## Governance Tracker Tool
 
-![Interactions Diagram](utils/interactions.png)
+![Inspiration](utils/gtool.png)
 
+
+## Governance Tracker Tool: Current Progress
+
+<img src="utils/otto.gif?raw=true" width="1000" height="750"/>
 
 ## Installation & Usage
 
+_TODO: List steps for React App
+
 1. Install the required packages: pip install -r requirements.txt
-2. In `configs.yaml` file, set your OpenAI and Pinecone API keys in the `OPENAI_API_KEY` and `PINECONE_API_KEY` variables.
+2. Rename `config_copy.yaml`to`config.yaml`, set your OpenAI and Pinecone API keys in the `OPENAI_API_KEY` and `PINECONE_API_KEY` variables.
 3. Set the Pinecone environment in the `PINECONE_ENVIRONMENT` variable.
 4. Set the name of the table where the task results will be stored in the `TABLE_NAME` variable.
 5. Set the first task of the system in the `FIRST_TASK` variable.
-6. Run the script: python scripts/main.py
+6. In root directory, run the script: python scripts/main.py
 
 ## Support
 
