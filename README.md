@@ -19,12 +19,18 @@ The project comprises the following components:
 * .github: Stores the GitHub-related configurations and workflows
 * LICENSE: Contains the project's license information.
 
-## Agent Interaction Diagram
+## Governance Tracker Tool
 
-![Interactions Diagram](utils/interactions.png)
+![Inspiration](utils/gtool.png)
 
+
+## Governance Tracker Tool: Current Progress
+
+<img src="utils/otto.gif?raw=true" width="1000" height="750"/>
 
 ## Installation & Usage
+
+_TODO: List steps for React App
 
 1. Install the required packages: pip install -r requirements.txt
 2. Rename `config_copy.yaml`to`config.yaml`, set your OpenAI and Pinecone API keys in the `OPENAI_API_KEY` and `PINECONE_API_KEY` variables.
