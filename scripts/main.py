@@ -44,7 +44,9 @@ task_manager.add_task(first_task)
 
 # Main loop
 task_id_counter = 1
-while True:
+
+def run_single_iteration():
+    global task_id_counter
     if task_manager.has_tasks():
         print("\033[95m\033[1m" + "\n*****TASK LIST*****\n" + "\033[0m\033[0m")
         print(task_manager)
@@ -67,16 +69,27 @@ while True:
         pinecone_helper.upsert([(result_id, get_ada_embedding(vector), {
                      "task": task['task_name'], "result": result})])
 
-    # Step 3: Create new tasks and reprioritize task list
-    new_tasks = task_creation_agent.create_tasks(
-        OBJECTIVE, result, task["task_name"], task_manager)
-    
-    for new_task in new_tasks:
-        task_id_counter += 1
-        new_task.update({"task_id": task_id_counter})
-        task_manager.add_task(new_task)
+        # Step 3: Create new tasks and reprioritize task list
+        new_tasks = task_creation_agent.create_tasks(
+            OBJECTIVE, result, task["task_name"], task_manager)
+        
+        for new_task in new_tasks:
+            task_id_counter += 1
+            new_task.update({"task_id": task_id_counter})
+            task_manager.add_task(new_task)
 
-    prioritization_agent.prioritize_tasks(
-        this_task_id, OBJECTIVE, task_manager)
+        prioritization_agent.prioritize_tasks(
+            this_task_id, OBJECTIVE, task_manager)
 
-time.sleep(1)
+        return result
+    else:
+        return "No tasks available"
+
+def main():
+    return run_single_iteration()
+
+if __name__ == "__main__":
+    while True:
+        result = run_single_iteration()
+        print("Result:", result)
+        time.sleep(1)
