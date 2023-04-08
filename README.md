@@ -24,7 +24,7 @@ The project comprises the following components:
 
 _TODO: Track, visualize, and analyze collective decision-making at scale
 
-<img src="utils/otto.gif?raw=true" width="1000" height="750"/>
+<img src="utils/landing.png" width="640" height="350"/>
 
 ## Installation & Usage
 
