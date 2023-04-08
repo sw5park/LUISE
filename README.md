@@ -19,14 +19,12 @@ The project comprises the following components:
 * .github: Stores the GitHub-related configurations and workflows
 * LICENSE: Contains the project's license information.
 
-## Governance Tracker Tool
-
-![Inspiration](utils/gtool.png)
-
 
 ## Governance Tracker Tool: Current Progress
 
-<img src="utils/otto.gif?raw=true" width="1000" height="750"/>
+_TODO: Track, visualize, and analyze collective decision-making at scale
+
+<img src="utils/landing.png" width="640" height="350"/>
 
 ## Installation & Usage
 
