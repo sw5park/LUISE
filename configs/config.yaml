@@ -8,7 +8,7 @@ pinecone:
     pod_type: s1
     
 openai:
-  api_key: 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
+  api_key: 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
 
 project:
   objective: Apply decision theory to the problem of making decisions in multiple agent systems that is self governing and self organizing.
