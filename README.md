@@ -1,8 +1,8 @@
-# Otto: Autonomous Collective Decision Maker (ACDM)
+# LUI: Autonomous Collective Decision Maker (ACDM)
 
-Otto wraps a large language model and a vector database, serving as the initial stage of a digital organization designed to be self-governing, autonomous, and capable of changing scale. The primary goal is to enable agents to collaboratively manage resources, make decisions, and govern themselves. Design decisions encompass autonomous processes that ensure all agents have an equal say in the direction and management of the organization.
+LUI wraps a large language model and a vector database, serving as the initial stage of a digital organization designed to be self-governing, autonomous, and capable of changing scale. The primary goal is to enable agents to collaboratively manage resources, make decisions, and govern themselves. Design decisions encompass autonomous processes that ensure all agents have an equal say in the direction and management of the organization.
 
-In its current form, Otto is an AI-driven system that manages tasks, executes them, generates new tasks, and reprioritizes the task list. It utilizes OpenAI for natural language understanding, Pinecone for task-result storage, and embeddings for context retrieval. The project may be deprecated at any moment. All credit goes to @OpenAI and @yoheinakajima.
+In its current form, LUI is an AI-driven system that manages tasks, executes them, generates new tasks, and reprioritizes the task list. It utilizes OpenAI for natural language understanding, Pinecone for task-result storage, and embeddings for context retrieval. The project may be deprecated at any moment. All credit goes to @OpenAI and @yoheinakajima.
 
 ## Features
 
